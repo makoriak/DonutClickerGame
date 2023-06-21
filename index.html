@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="hamburger.css"/>
+    <title>Donut Clicker</title>
+</head>
+<body>
+
+    <header>
+        <div class="hamburger-menu" onclick="toggleDropdown();">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="dropdown" class="dropdown">
+            <a href="#" onclick="openModal('modal1'); return false;">About</a>
+            <a href="#" onclick="openModal('modal2'); return false;">Inspiration</a>
+            <a href="#" onclick="openModal('modal3'); return false;">Contact</a>
+          </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h3>Fred the Baker Baking Company</h3>
+              <p>Fred the Baker Baking Company serves the best donuts in the world!</p>
+              <button onclick="closeModal('modal1');">Close</button>
+            </div>
+        </div>
+
+            
+        <div id="modal2" class="modal">
+             <div class="modal-content">
+                <h3>Cookie Clicker</h3>
+                <a href="https://orteil.dashnet.org/cookieclicker/">Link</a>
+                 <button onclick="closeModal('modal2');">Close</button>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+              <h3>Contact Me</h3>
+              <p></p>
+              <button onclick="closeModal('modal3');">Close</button>
+            </div>
+          </div>
+
+    </header>
+
+    <h1>Donut Clicker</h1>
+    <p>Donuts: <span id="donutCount">0</span></p>
+    
+    <button id="clickBtn">Click me to earn a donut</button>
+    <button id="autoClickBtn" disabled>Purchase Auto Clicker (<span id="autoClickCost">100</span> donuts)</button>
+    <button id="stopAutoClickBtn">Disable Auto Clicker</button>
+    <p>Auto Clickers: <span id="autoClickerCount">0</span></p>
+    <button id="resetBtn">Reset Game</button>
+
+    <script src="DonutMaker.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>

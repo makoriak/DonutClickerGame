@@ -24,7 +24,7 @@ var donutCount = 0;
         document.getElementById('donutCount').textContent = donutCount;
 
         autoClickers++;
-        autoClickCost = Math.round(autoClickCost * 1.1); // Increase cost by 10%
+        autoClickCost = Math.round(autoClickCost * 1.1); // 10%
 
         document.getElementById('autoClickCost').textContent = autoClickCost;
         document.getElementById('autoClickBtn').disabled = true;
@@ -34,7 +34,7 @@ var donutCount = 0;
         if (autoClickIntervalId) {
           clearInterval(autoClickIntervalId);
         }
-        autoClickIntervalId = setInterval(autoClick, 1000); // Clicks every 1 second (adjust the interval as needed)
+        autoClickIntervalId = setInterval(autoClick, 1000); 
       }
     });
 

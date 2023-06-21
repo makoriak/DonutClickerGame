@@ -1,4 +1,4 @@
- /* CSS for the hamburger menu */
+ /*hamburger menu */
  .hamburger-menu {
   display: inline-block;
   cursor: pointer;
@@ -34,7 +34,7 @@
   top: 100%;
 }
 
-    /* CSS for the dropdown */
+    /*dropdown */
  .dropdown {
       display: none;
       position: absolute;
@@ -53,7 +53,7 @@
       color: #333;
     }
 
-    /* CSS for the modal */
+    /* modal */
     .modal {
       display: none;
       position: fixed;
